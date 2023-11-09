@@ -30,9 +30,10 @@
 
     $cobro = $_POST["cobro"];
     $horas = $_POST["horas"];
-    
+    $extra = $horas - 40
+
     if ($horas > "40") {
-        echo "Cobra: ".$horas * ($cobro * 1.5);
+        echo "Cobra: ".($horas * $cobro) + ($extra * ($cobro * 1.5));
 
     }else{
         echo "El precio es: ".($horas * $cobro);
